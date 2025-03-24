@@ -9,23 +9,17 @@
     "postinstall": "symlink-dir node_modules/cesium/Build/Cesium public/cesium"
   },
   "dependencies": {
-    "bootstrap": "5.3.3",
-    "cesium": "1.124.0",
-    "next": "15.2.3",
+    "bootstrap": "^5.3.3",
+    "cesium": "^1.124.0",
+    "next": "^15.2.3",
     "prop-types": "^15.8.1",
-    "react": "18.3.1",
-    "react-bootstrap": "2.10.6",
-    "react-dom": "18.3.1",
+    "protobufjs": "^7.4.0",
+    "react": "^18.3.1",
+    "react-bootstrap": "^2.10.6",
+    "react-dom": "^18.3.1",
     "resium": "^1.18.2"
   },
   "devDependencies": {
-    "eslint": "^9.16.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-next": "15.0.3",
-    "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-jsx-a11y": "^6.10.0",
-    "eslint-plugin-react": "^7.37.2",
-    "eslint-plugin-react-hooks": "^5.0.0",
     "symlink-dir": "^6.0.3"
   }
 }

@@ -14,7 +14,7 @@ class App(Flask):
 
     def __init__(
         self: App,
-        data: Data,
+        data: Data["DATA"],
         host: str = 'localhost',
         port: int = 9000,
         api_prefix: str = '/',
@@ -29,6 +29,8 @@ class App(Flask):
         self.data_dir = data_dir
         self.data = data
         self.debug = debug
+
+        CORS(self, origins=["http://localhost:3000", "https://cesium-api.uniclogs.org"])
 
         # Register app views
         self.register_blueprint(view_czml, url_prefix=f"{api_prefix}/czml")

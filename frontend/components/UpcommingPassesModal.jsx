@@ -23,9 +23,10 @@ function UpcommingPassesModal({ show, handleClose }) {
   const [passes, setPasses] = useState(PASSES_DEFAULT);
 
   useEffect(() => {
-    fetch(`${BACKEND_REST_API}/passes/${gs}/${sat}`)
+        fetch(`${BACKEND_REST_API}/passes/${gs}/${sat}`)
       .then(response => response.json())
       .then(data => {
+
         setPasses(data);
       });
   }, []);

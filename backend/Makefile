@@ -1,5 +1,5 @@
 docker:
-	python -m pip wheel . -w build --no-deps
+	python3 -m pip wheel . -w build --no-deps
 	docker compose build --build-arg VERSION=`grep -i 'version' pyproject.toml | cut -d'"' -f2`
 
 hub:

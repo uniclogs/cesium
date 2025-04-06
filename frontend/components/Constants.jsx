@@ -1,4 +1,5 @@
 // Shared constants
+const REST_API = process.env.NEXT_PUBLIC_API_BASE_URL;
 export const BACKEND_REST_API = REST_API || `https://cesium-api.uniclogs.org`;
 console.log(`[ENV]: Using Rest API at ${BACKEND_REST_API}`)
 

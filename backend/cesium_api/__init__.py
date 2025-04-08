@@ -12,6 +12,7 @@ APP_VERSION = version(__name__)
 DEFAULT_HOST = '0.0.0.0'
 DEFAULT_PORT = 9000
 DEFAULT_DATA_DIR = os.getenv("DATA_DIR", "../data")
+DEFAULT_TILES_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "geo-tiles"))
 DEFAULT_API_PREFIX = '/'
 
 SATELLITES = [

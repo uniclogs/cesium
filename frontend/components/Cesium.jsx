@@ -11,7 +11,7 @@ import {
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const imageryProvider = new UrlTemplateImageryProvider({
-  url: BACKEND_REST_API + '/tiles/{z}/{x}/{reverseY}.png',
+  url: BACKEND_REST_API + '/tiles/{z}/{x}/{y}.png',
   tilingScheme: new GeographicTilingScheme(),
   maximumLevel: 5,
 });

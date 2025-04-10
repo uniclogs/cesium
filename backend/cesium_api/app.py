@@ -33,7 +33,12 @@ class App(Flask):
         self.data = data
         self.debug = debug
 
-        CORS(self, origins=["http://localhost:3000", "https://cesium-api.uniclogs.org"])
+#        CORS(self, origins=['http://localhost:3000','http://localhost:5173', 'https://cesium-api.uniclogs.org'])
+        CORS(self, resources={r"/**": {"origins": [
+            "http://localhost:5173",
+            "http://localhost:3000",
+            "https://cesium-api.uniclogs.org"
+        ]}}, supports_credentials=True)
 
         # Register app views
         self.register_blueprint(view_czml, url_prefix=f"{api_prefix}/czml")

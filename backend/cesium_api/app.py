@@ -6,7 +6,6 @@ from . import DEFAULT_TILES_DIR
 from .views import view_czml, view_groundstation, view_passes, view_satellite, view_tiles
 from .data import Data
 
-
 class App(Flask):
     host: str
     port: int
@@ -34,11 +33,11 @@ class App(Flask):
         self.debug = debug
 
 #        CORS(self, origins=['http://localhost:3000','http://localhost:5173', 'https://cesium-api.uniclogs.org'])
-        CORS(self, resources={r"/**": {"origins": [
-            "http://localhost:5173",
-            "http://localhost:3000",
-            "https://cesium-api.uniclogs.org"
-        ]}}, supports_credentials=True)
+        CORS(self, origins="*")
+         #  "http://localhost:5173",
+         #   "http://localhost:3000",
+         #   "https://cesium-api.uniclogs.org"
+        #]}}, supports_credentials=True)
 
         # Register app views
         self.register_blueprint(view_czml, url_prefix=f"{api_prefix}/czml")

@@ -2,7 +2,6 @@ from __future__ import annotations
 from flask import Flask, Blueprint
 from flask_cors import CORS
 from . import DEFAULT_DATA_DIR
-from . import DEFAULT_TILES_DIR
 from .views import view_czml, view_groundstation, view_passes, view_satellite, view_tiles
 from .data import Data
 

@@ -3,7 +3,7 @@ import { useCesium } from 'resium';
 import { JulianDate } from 'cesium';
 import Table from 'react-bootstrap/Table';
 import Modal from 'react-bootstrap/Modal';
-import { BACKEND_REST_API } from './Constants';
+import { VITE_API_BASE_URL } from './Constants';
 
 const DEFAULT_DATE = new Date();
 const PASSES_DEFAULT = [{
@@ -23,7 +23,7 @@ function UpcommingPassesModal({ show, handleClose }) {
   const [passes, setPasses] = useState(PASSES_DEFAULT);
 
   useEffect(() => {
-        fetch(`${BACKEND_REST_API}/passes/${gs}/${sat}`)
+        fetch(`${VITE_API_BASE_URL}/passes/${gs}/${sat}`)
       .then(response => response.json())
       .then(data => {
 

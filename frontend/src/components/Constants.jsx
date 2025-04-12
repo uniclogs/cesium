@@ -1,7 +1,7 @@
 // Shared constants
 const REST_API = import.meta.env.VITE_API_BASE_URL;
-export const BACKEND_REST_API = REST_API || `https://cesium-api.uniclogs.org`;
-console.log(`[ENV]: Using Rest API at ${BACKEND_REST_API}`)
+export const VITE_API_BASE_URL = REST_API || `https://cesium-api.uniclogs.org`;
+console.log(`[ENV]: Using Rest API at ${VITE_API_BASE_URL}`)
 
 // to replace the Cesium Ion logo with just a Cesium logo
 // this is not using Cesium Ion, only CesiumJS

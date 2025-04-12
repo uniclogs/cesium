@@ -6,12 +6,12 @@ import {
 import DataFetcher from './DataFetcher';
 import Overlay from './Overlay';
 import {
-  BACKEND_REST_API, CESIUM_CREDIT, HOME_LONG_DEG, HOME_LAT_DEG, HOME_ALT_M,
+  VITE_API_BASE_URL, CESIUM_CREDIT, HOME_LONG_DEG, HOME_LAT_DEG, HOME_ALT_M,
 } from './Constants';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const imageryProvider = new UrlTemplateImageryProvider({
-  url: BACKEND_REST_API + '/tiles/{z}/{x}/{y}.png',
+  url: VITE_API_BASE_URL + '/tiles/{z}/{x}/{y}.png',
   tilingScheme: new GeographicTilingScheme(),
   minimumLevel: 0,
   maximumLevel: 5,
@@ -48,7 +48,7 @@ import {
 import DataFetcher from './DataFetcher';
 import Overlay from './Overlay';
 import {
-  BACKEND_REST_API,
+  VITE_API_BASE_URL,
   CESIUM_CREDIT,
   HOME_LONG_DEG,
   HOME_LAT_DEG,
@@ -59,7 +59,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Set up your imagery provider
 const imageryProvider = new UrlTemplateImageryProvider({
-  url: `${BACKEND_REST_API}/tiles/{z}/{x}/{y}.png`,
+  url: `${VITE_API_BASE_URL}/tiles/{z}/{x}/{y}.png`,
   tilingScheme: new GeographicTilingScheme(),
   minimumLevel: 0,
   maximumLevel: 5,

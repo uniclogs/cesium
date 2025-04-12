@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useCesium } from 'resium';
 import { CzmlDataSource, Cartesian3 } from 'cesium';
-import { BACKEND_REST_API, CESIUM_CREDIT, HOME_LAT_DEG, HOME_LONG_DEG, HOME_ALT_M, RETRY_DELAY } from './Constants';
+import { VITE_API_BASE_URL, CESIUM_CREDIT, HOME_LAT_DEG, HOME_LONG_DEG, HOME_ALT_M, RETRY_DELAY } from './Constants';
 import { func } from 'prop-types';
 
 const delay = ms => new Promise(
@@ -12,7 +12,7 @@ function DataFetcher() {
   const cesium = useCesium();
 
   function fetchCzml() {
-    const url = `${BACKEND_REST_API}/czml`
+    const url = `/czml`
     console.debug(`Fetching CZML from ${url}`)
 
     fetch(url)
@@ -61,7 +61,7 @@ function DataFetcher() {
       fetchCzml();
     }, 3600000); // ms
     return () => clearInterval(interval);
-  });
+  }, []);
 
   return (
     <div />

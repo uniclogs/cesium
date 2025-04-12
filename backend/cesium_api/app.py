@@ -27,7 +27,6 @@ class App(Flask):
         self.host = host
         self.port = port
         self.data_dir = data_dir
-        self.tiles_dir = tiles_dir or DEFAULT_TILES_DIR
         self.data = data
         self.debug = debug
 

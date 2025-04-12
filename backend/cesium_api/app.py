@@ -19,7 +19,6 @@ class App(Flask):
         port: int = 9000,
         api_prefix: str = '/',
         data_dir: str = DEFAULT_DATA_DIR,
-        tiles_dir: str = DEFAULT_TILES_DIR,
         debug: bool = False,
     ):
         super().__init__(__name__)

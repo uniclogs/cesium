@@ -4,7 +4,7 @@ from argparse import ArgumentParser, Namespace
 from .app import App
 from .data import Data
 from flask_cors import CORS
-from . import APP_NAME, APP_DESCRIPTION, APP_VERSION, SATELLITES, GROUND_STATIONS, DEFAULT_HOST, DEFAULT_PORT, DEFAULT_DATA_DIR, DEFAULT_API_PREFIX, DEFAULT_TILES_DIR
+from . import APP_NAME, APP_DESCRIPTION, APP_VERSION, SATELLITES, GROUND_STATIONS, DEFAULT_HOST, DEFAULT_PORT, DEFAULT_DATA_DIR, DEFAULT_API_PREFIX
 
 
 LOG = logging.getLogger(__name__)

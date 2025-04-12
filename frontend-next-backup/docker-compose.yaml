@@ -1,9 +1,0 @@
-services:
-  cesium-web-app:
-    image: cesium-web-app:latest
-    build:
-      context: .
-    ports:
-      - '7008:3000'
-    env_file:
-      - .env.production

@@ -13,7 +13,7 @@ class App(Flask):
 
     def __init__(
         self: App,
-        data: Data["DATA"],
+        data: Data,
         host: str = 'localhost',
         port: int = 9000,
         api_prefix: str = '/',

@@ -1,9 +1,10 @@
-import logging 
-from argparse import ArgumentParser, Namespace 
-from .app import App 
-from .data import Data 
-from flask_cors import CORS 
-from . import APP_NAME, APP_DESCRIPTION, APP_VERSION, SATELLITES, GROUND_STATIONS, DEFAULT_HOST, DEFAULT_PORT, DEFAULT_DATA_DIR, DEFAULT_API_PREFIX, DEFAULT_TILES_DIR
+import logging
+
+from argparse import ArgumentParser, Namespace
+from .app import App
+from .data import Data
+from flask_cors import CORS
+from . import APP_NAME, APP_DESCRIPTION, APP_VERSION, SATELLITES, GROUND_STATIONS, DEFAULT_HOST, DEFAULT_PORT, DEFAULT_DATA_DIR, DEFAULT_API_PREFIX
 
 
 LOG = logging.getLogger(__name__)
@@ -81,7 +82,6 @@ def main():
         port=args.port,
         api_prefix=api_prefix,
         data_dir=args.data_dir,
-        tiles_dir=DEFAULT_TILES_DIR,
         debug=args.debug,
     )
     

@@ -82,7 +82,6 @@ def main():
         port=args.port,
         api_prefix=api_prefix,
         data_dir=args.data_dir,
-        tiles_dir=DEFAULT_TILES_DIR,
         debug=args.debug,
     )
     allowed_hosts = ['http://:localhost:3000', 'https://cesium-api.uniclogs.org']

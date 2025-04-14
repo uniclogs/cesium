@@ -5,7 +5,16 @@
 ## Development Prerequisites
 
 Install [GDAL] for your system. See [GDAL Download].
+*gdal
+```sh
+pip install gdal
+```
 
-Install python gdal wrapper
-
-`$` `pip install gdal`
+*npm 
+```sh
+ npm install npm@latest -g
+```
+*react-router-dom
+```sh
+npm install react-router-dom
+```

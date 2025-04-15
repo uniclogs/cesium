@@ -5,7 +5,6 @@ from . import DEFAULT_DATA_DIR
 from .views import view_czml, view_groundstation, view_passes, view_satellite, view_tiles
 from .data import Data
 
-
 class App(Flask):
     host: str
     port: int
@@ -29,6 +28,9 @@ class App(Flask):
         self.data_dir = data_dir
         self.data = data
         self.debug = debug
+
+        # CORS(self, origins=["https://cesium-api.uniclogs.org"])
+        CORS(self, origins=["http://localhost:5173"])
 
         # Register app views
         self.register_blueprint(view_czml, url_prefix=f"{api_prefix}/czml")

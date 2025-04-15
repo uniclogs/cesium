@@ -1,29 +1,13 @@
-### Cesium Front-End Application
+# React + Vite
 
-```bash
-cd frontend
-```
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Install `nodejs` and `yarn` for your system
+Currently, two official plugins are available:
 
-```bash
-sudo apt install nodejs yarnpkg
-```
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-Install JavaScript dependencies
+## Expanding the ESLint configuration
 
-```bash
-yarn install
-```
+If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
-Start the app
-
-```bash
-yarn dev
-```
-
-Goto `localhost3000` in a web browser
-
-[GDAL]:https//gdal.org
-[GDAL Download]:https//gdal.org/download.html
-[CesiumJS]:https//github.com/CesiumGS/cesium

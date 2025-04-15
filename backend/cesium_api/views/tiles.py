@@ -4,7 +4,6 @@ from flask import Blueprint, current_app, send_file
 
 view_tiles = Blueprint("view_tiles", __name__)
 
-
 @view_tiles.route("/<int:zoom>/<int:x>/<int:y>.png")
 def get_tile(zoom: int, x: int, y: int):
     data_dir = current_app.data_dir

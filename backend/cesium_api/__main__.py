@@ -84,9 +84,6 @@ def main():
         data_dir=args.data_dir,
         debug=args.debug,
     )
-    allowed_hosts = ['http://:localhost:3000', 'https://cesium-api.uniclogs.org']
-    CORS(app, origins=allowed_hosts)
-    LOG.info(f'Allowing CORs hosts: {allowed_hosts}')
     
     app.run()
 

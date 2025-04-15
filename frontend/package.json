@@ -1,31 +1,34 @@
 {
-  "name": "uniclogs-cesium",
-  "version": "1.0.2",
+  "name": "frontend",
   "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "postinstall": "symlink-dir node_modules/cesium/Build/Cesium public/cesium"
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "bootstrap": "5.3.3",
-    "cesium": "1.124.0",
-    "next": "15.2.3",
+    "bootstrap": "^5.3.5",
+    "cesium": "^1.128.0",
     "prop-types": "^15.8.1",
-    "react": "18.3.1",
-    "react-bootstrap": "2.10.6",
-    "react-dom": "18.3.1",
-    "resium": "^1.18.2"
+    "react": "^19.0.0",
+    "react-bootstrap": "^2.10.9",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.5.0",
+    "resium": "^1.19.0-beta.1",
+    "vite-plugin-cesium": "^1.2.23"
   },
   "devDependencies": {
-    "eslint": "^9.16.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-next": "15.0.3",
-    "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-jsx-a11y": "^6.10.0",
-    "eslint-plugin-react": "^7.37.2",
-    "eslint-plugin-react-hooks": "^5.0.0",
-    "symlink-dir": "^6.0.3"
+    "@eslint/js": "^9.21.0",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react-swc": "^3.8.0",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^15.15.0",
+    "vite": "^6.2.0"
   }
 }

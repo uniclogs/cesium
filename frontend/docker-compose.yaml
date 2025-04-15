@@ -1,0 +1,7 @@
+services:
+  cesium-web-app:
+    image: cesium-web-app:latest
+    build:
+      context: .
+    ports:
+      - '7008:7008'

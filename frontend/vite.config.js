@@ -22,6 +22,7 @@ export default defineConfig({
         manualChunks: undefined, // optional: avoids code splitting issues
       }
     }
-  }
+  },
+  base: './',
 })
 

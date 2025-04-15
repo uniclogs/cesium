@@ -12,7 +12,7 @@ function DataFetcher() {
   const cesium = useCesium();
 
   function fetchCzml() {
-    const url = `/czml`
+    const url = `${VITE_API_BASE_URL}/czml`
     console.debug(`Fetching CZML from ${url}`)
 
     fetch(url)

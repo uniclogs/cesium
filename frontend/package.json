@@ -1,31 +1,48 @@
 {
-  "name": "uniclogs-cesium",
-  "version": "1.0.2",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "postinstall": "symlink-dir node_modules/cesium/Build/Cesium public/cesium"
+  "name": "cesiumjs-vite-example",
+  "version": "1.0.0",
+  "description": "The minimal recommended setup for an app using Cesium with Vite.",
+  "homepage": "https://cesium.com/platform/cesiumjs/",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "Cesium GS, Inc.",
+    "url": "https://cesium.com"
   },
-  "dependencies": {
-    "bootstrap": "5.3.3",
-    "cesium": "1.124.0",
-    "next": "15.2.3",
-    "prop-types": "^15.8.1",
-    "react": "18.3.1",
-    "react-bootstrap": "2.10.6",
-    "react-dom": "18.3.1",
-    "resium": "^1.18.2"
+  "keywords": [
+    "cesium",
+    "CesiumJS",
+    "vite",
+    "example"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CesiumGS/cesium-vite-example.git"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "eslint": "eslint \"./**/*.js\" \"./**/*.html\" --cache --quiet",
+    "prettier": "prettier --write --no-config \"**/*\"",
+    "prettier-check": "prettier --check --no-config \"**/*\""
   },
   "devDependencies": {
-    "eslint": "^9.16.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-next": "15.0.3",
-    "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-jsx-a11y": "^6.10.0",
-    "eslint-plugin-react": "^7.37.2",
-    "eslint-plugin-react-hooks": "^5.0.0",
-    "symlink-dir": "^6.0.3"
+    "eslint": "^8.56.0",
+    "eslint-config-cesium": "^10.0.2",
+    "eslint-plugin-es": "^4.1.0",
+    "eslint-plugin-html": "^7.1.0",
+    "prettier": "^3.2.4",
+    "vite": "^6.3.0",
+    "vite-plugin-static-copy": "^2.3.1"
+  },
+  "dependencies": {
+    "cesium": "^1.114.0"
+  },
+  "lint-staged": {
+    "*.{js,html}": [
+      "eslint --cache --quiet",
+      "prettier --write --no-config"
+    ]
   }
 }

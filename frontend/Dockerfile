@@ -26,4 +26,4 @@ RUN npm install
 
 EXPOSE ${APP_PORT}
 
-CMD vite --host 0.0.0.0 --port 7008
+CMD ["vite", "--host", "0.0.0.0", "--port", "7008"]

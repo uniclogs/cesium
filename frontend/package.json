@@ -1,22 +1,21 @@
 {
-  "name": "cesiumjs-vite-example",
-  "version": "1.0.0",
-  "description": "The minimal recommended setup for an app using Cesium with Vite.",
-  "homepage": "https://cesium.com/platform/cesiumjs/",
+  "name": "cesium-web-app",
+  "version": "0.1.1",
+  "description": "The UniClOGS edition of CesiumJS.",
+  "homepage": "https://www.uniclogs.org",
   "license": "Apache-2.0",
   "author": {
-    "name": "Cesium GS, Inc.",
-    "url": "https://cesium.com"
+    "name": "Portland State Aerospace Society",
+    "url": "https://cesium.uniclogs.org"
   },
   "keywords": [
     "cesium",
     "CesiumJS",
-    "vite",
-    "example"
+    "vite"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/CesiumGS/cesium-vite-example.git"
+    "url": "https://github.com/uniclogs/cesium.git"
   },
   "type": "module",
   "scripts": {

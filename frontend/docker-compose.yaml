@@ -1,6 +1,7 @@
 services:
   cesium-web-app:
     image: cesium-web-app:latest
+    container_name: cesium-web-app
     build:
       context: .
     ports:

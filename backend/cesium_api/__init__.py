@@ -1,9 +1,7 @@
 import os
-import json
-from flask_cors import CORS
-from flask import Flask, send_file
 from importlib.metadata import version
-from .data import Data, GroundStation, Satellite
+
+from .data import GroundStation, Satellite
 
 APP_NAME = "cesium-api"
 APP_DESCRIPTION = "A supporting API for the CesiumJS App"

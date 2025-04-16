@@ -1,0 +1,13 @@
+services:
+  cesium-web-app:
+    image: cesium-web-app:latest
+    container_name: cesium-web-app
+    build:
+      context: .
+    ports:
+      - '8080:80'
+    volumes:
+      - globe_data:/var/cesium-api/
+
+volumes:
+  globe_data:
